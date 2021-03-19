@@ -1,0 +1,136 @@
+.header {
+  background: #20242A;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  width: 1366px;
+}
+
+#vent {
+  transition: all 0.5s ease;
+  animation: rotate 3s linear infinite;
+  fill: #4585ef;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+}
+
+#BgVent {
+  width: 70px;
+  fill: #ffffff;
+  left: 0;
+  z-index: 9;
+}
+
+.sitename_link {
+  color: white;
+  text-decoration: none;
+  font-size: 27px;
+}
+@keyframes  rotate {
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*Menu*/
+
+
+button {
+  outline: none;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 13px;
+  top: 20px;
+  display: none;
+}
+
+.bm-burger-button:hover {
+  color: #4585ef;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #4585ef;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+
+@media (max-width: 425px) {
+  .sitename_text {
+    display: none;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .bm-burger-button {
+      top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bm-burger-button {
+    display: block;
+  }
+}
